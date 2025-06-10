@@ -2,8 +2,8 @@ services:
   - type: worker
     name: tiktok-remix-bot
     runtime: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "python app.py"
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
     envVars:
       - key: OPENAI_API_KEY
-        value: (você coloca no painel da Render)
+        sync: false
